@@ -1,0 +1,19 @@
+query {
+    artist_aggregate {
+      aggregate {
+        count
+      }
+    }
+  }
+
+----------
+
+{
+    "data": {
+      "artist_aggregate": {
+        "aggregate": {
+          "count": 275
+        }
+      }
+    }
+  }

@@ -1,0 +1,32 @@
+mutation AddArtistAndAlbum {
+    insert_artist_one(object: {
+      name: "Drake", 
+      albums: {data: [{title: "If You're Reading This It's Too Late"}]}
+    }) {
+      artist_id
+      name
+      albums {
+        album_id
+        title
+      }
+    }
+  }
+
+  
+-------------------------------
+
+
+{
+    "data": {
+      "insert_artist_one": {
+        "artist_id": 284,
+        "name": "Drake",
+        "albums": [
+          {
+            "album_id": 348,
+            "title": "If You're Reading This It's Too Late"
+          }
+        ]
+      }
+    }
+  }

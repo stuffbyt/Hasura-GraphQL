@@ -1,0 +1,3 @@
+# How did you identify which ID to include in the mutation?
+
+I ran into multiple errors when running a mutation query. I primarily received two errors: 1/ no-null violation, and 2/duplicate data entry. I ran a SQL query to find out the maximum number of artist_id, and set the database such that it auto-incremented the artist_id from that maximum number. I had to repeat these steps for album_id as well. 

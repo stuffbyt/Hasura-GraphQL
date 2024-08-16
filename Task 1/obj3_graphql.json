@@ -1,0 +1,24 @@
+{
+    artist_by_pk(artist_id: 5) {
+      name
+      albums {
+        title
+      }
+    }
+  }
+  
+----------------------
+
+{
+    "data": {
+      "artist_by_pk": {
+        "name": "Alice In Chains",
+        "albums": [
+          {
+            "title": "Facelift"
+          }
+        ]
+      }
+    }
+  }
+
